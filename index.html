@@ -293,13 +293,34 @@
         html {
             scroll-behavior: smooth;
         }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+        }
+
+        .logo-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">CloudSync</div>
+           <div class="logo">
+               <span class="logo-icon">☁️</span>
+               <span class="logo-text">CloudSync</span>
+           </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
@@ -400,4 +421,5 @@
 </body>
 
 </html>
+
 
